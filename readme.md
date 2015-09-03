@@ -12,4 +12,4 @@ Maybe someday, far into the future, I will document each of them, but for now it
 
 ### Usage
 
-Simply drop into a Unity3d assets folder.
+Simply drop the `tpd.cs` script into a Unity3d assets folder.
