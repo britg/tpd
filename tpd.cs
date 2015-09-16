@@ -34,6 +34,10 @@ public class tpd {
     return (s.Substring(0, match.Length) == match);
   }
 
+  public static string RemoveSubString (string s, string match) {
+    return s.Replace(match, "");
+  }
+
   public static string AddOrdinal (int num) {
     if (num <= 0) return num.ToString();
 
@@ -115,6 +119,10 @@ public class tpd {
 
   public static float RollRange (RangeAttribute range) {
     return Random.Range(range.min, range.max);
+  }
+
+  public static T RollList<T> (List<T> list) {
+    return list[Random.Range(0, list.Count -1)];
   }
 
   /*
